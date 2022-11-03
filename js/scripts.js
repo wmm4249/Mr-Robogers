@@ -1,8 +1,8 @@
 //Business Logic
 
-function beepBoop (numberStop) { 
+function beepBoop (input) { 
     var numbers = [];
-    for (let index = 0; index <= numberStop; index += 1) {
+    for (let i = 0; i <= input; i++) {
       var words = index.toString();
     
 });
