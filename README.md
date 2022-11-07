@@ -1,4 +1,4 @@
-# _My jQuery Project_
+# _Mr Roboger's Neighborhood_
 
 #### By _**Mars McCullough**_
 
@@ -23,3 +23,10 @@ Describe: beepBoop()
 Test: "It should return an array with a 0 if the number 0 is inputted"
 Code: beepBoop(0);
 Expected Output: [ 0 ]
+
+Describe: numbers.map
+
+Test: "It should return a result showing beep if the number 1 is inputted"
+Code: var robogers = numbers.map(function(number) {
+      if (number.includes("1")) {
+        return number = beep;
