@@ -24,7 +24,7 @@ function beepBoop (input) {
     return robogers;
   }
 
-// UI Logic
+//UI Logic
 
 $(document).ready(function() {
   $("form#number").submit(function(event) {
@@ -35,5 +35,3 @@ $(document).ready(function() {
     $(".output").show();
     });
   });
-  
-
