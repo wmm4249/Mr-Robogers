@@ -10,20 +10,20 @@ function beepBoop (input) {
       numbers.push(i.toString());
     };
   
-    var robogers = numbers.map(function(number) {
-      console.log(number)
-      if (number.includes("1")) {
+var robogers = numbers.map(function(number) {
+  console.log(number)
+    if (number.includes("3")) {
+      return number = neighbor;
+      } else if (number.includes("2")) {
+        return number = boop;
+      } else if (number.includes("1")) {
         return number = beep;
-        } else if (number.includes("2")) {
-          return number = boop;
-        } else if (number.includes("3")) {
-          return number = neighbor;
-        } else {
-          return number;
-      };
-    });
-    console.table(robogers)
-    return robogers;
+      } else {
+        return number;
+    };
+  });
+  console.table(robogers)
+  return robogers;
   }
 
 //UI Logic

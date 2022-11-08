@@ -24,9 +24,20 @@ Test: "It should return an array with a 0 if the number 0 is inputted"
 Code: beepBoop(0);
 Expected Output: [ 0 ]
 
-Describe: numbers.map
+Describe: numbers.map()
+
+Test: "It should return a result showing beep if the number 1 is inputted"
+Code: var robogers = numbers.map(function(number) {
+      if (number.includes("3")) {
+        return number = Won't You Be My Neighbor;
+
+Test: "It should return a result showing beep if the number 1 is inputted"
+Code: var robogers = numbers.map(function(number) {
+      if (number.includes("2")) {
+        return number = Boop;
 
 Test: "It should return a result showing beep if the number 1 is inputted"
 Code: var robogers = numbers.map(function(number) {
       if (number.includes("1")) {
-        return number = beep;
+        return number = Beep;
+
