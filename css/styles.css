@@ -1,0 +1,34 @@
+body {
+    margin: 2em;
+    background: skyblue;
+}
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 2em; 
+  }
+  
+  h3 {
+    font-size: 10px;
+    text-align: left;
+    margin-top: 2em; 
+    
+  }
+  
+  .btn {
+    background-color: #108690;
+    border: none;
+    margin: 10px;
+    color: whitesmoke;
+    padding: 10px 10px;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
