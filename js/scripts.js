@@ -1,18 +1,17 @@
 //Business Logic
 
 const beep = "Beep!"
-const boop = "boop!"
+const boop = "Boop!"
 const neighbor = "Won't you be my neighbor?"
 
-function beepBoop (input) { 
-  console.log(input+2)
+function beepBoop (input) {
     let numbers = [];
     for (let i = 0; i <= input; i++) {
-      numbers.push(i,toString());
+      numbers.push(i.toString());
     };
   
     var robogers = numbers.map(function(number) {
-      console.log(typeof number)
+      console.log(number)
       if (number.includes("1")) {
         return number = beep;
         } else if (number.includes("2")) {
@@ -23,6 +22,7 @@ function beepBoop (input) {
           return number;
       };
     });
+    console.table(robogers)
     return robogers;
   }
 
