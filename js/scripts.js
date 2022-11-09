@@ -33,7 +33,7 @@ $(document).ready(function() {
     event.preventDefault();
     var input = parseInt($("input#input").val());
     var result = beepBoop(input);
-    $(".results").text(beepBoop);
+    $(".results").text(robogers);
     $(".results").show();
     $(".container").hide();
     $("#output").html();
