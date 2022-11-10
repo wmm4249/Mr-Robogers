@@ -31,11 +31,11 @@ var robogers = numbers.map(function(number) {
 $(document).ready(function() {
   $("form#number").submit(function(event) {
     event.preventDefault();
-    var input = parseInt($("input#input").val());
+    let userInput = $("input#input".val());
+    var input = parseInt(userInput);
     var result = beepBoop(input);
-    $(".results").show(beepBoop);
-    // $(".container").hide();
-    $("#output").html();
+    $(".results").show();
+    $("#output").html(result);
     $("form#number").hide();
     });
   });
