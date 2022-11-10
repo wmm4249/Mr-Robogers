@@ -23,7 +23,8 @@ var robogers = numbers.map(function(number) {
     };
   });
   console.table(robogers)
-  return robogers;
+  console.log(typeof robogers)
+  return robogers.join(', ');
   }
 
 //UI Logic
@@ -31,7 +32,7 @@ var robogers = numbers.map(function(number) {
 $(document).ready(function() {
   $("form#number").submit(function(event) {
     event.preventDefault();
-    let userInput = $("input#input".val());
+    let userInput = $("input#input").val();
     var input = parseInt(userInput);
     var result = beepBoop(input);
     $(".results").show();
