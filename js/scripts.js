@@ -34,13 +34,14 @@ $(document).ready(function() {
     var input = parseInt($("input#input").val());
     var result = beepBoop(input);
     $(".results").show(beepBoop);
-    $(".container").hide();
+    // $(".container").hide();
     $("#output").html();
+    $("form#number").hide();
     });
   });
   $("#reload-page").click(function() {
 
-  $("form#number").show;
+  $("form#number").show();
 
   $(".results").hide();
 });
