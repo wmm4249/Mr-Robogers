@@ -1,6 +1,3 @@
-//Utlity Logic
-
-
 //Business Logic
 
 const beep = "Beep!"
@@ -25,8 +22,6 @@ var robogers = numbers.map(function(number) {
         return number;
     };
   });
-  console.table(robogers)
-  console.log(typeof robogers)
   return robogers.join(', ');
   }
 
@@ -40,12 +35,18 @@ $(document).ready(function() {
     var result = beepBoop(input);
     $(".results").show();
     $("#output").html(result);
-    $("form#number").hide();
-    });
+    $(".container").hide();
+    $(".refresh").show();
   });
+
   $("#reload-page").click(function() {
 
-  $("form#number").show();
-
-  $(".results").hide();
+    $(".container").show();
+    $("input#input").val("");
+    $(".results").hide();
+    $(".refresh").hide();
+  });  
 });
+  
+
+ 
