@@ -30,20 +30,20 @@ Expected Output: [ 0 ]
 
 Describe: numbers.map()
 
-Test: "It should return a result showing beep if the number 1 is inputted"
+Test: "It should return a result showing Won't You Be My Neighbor if the number 1 is inputted"
 Code: var robogers = numbers.map(function(number) {
       if (number.includes("3")) {
-        return number = Won't You Be My Neighbor;
+Expected Output: = [ Won't You Be My Neighbor; ]
 
-Test: "It should return a result showing beep if the number 1 is inputted"
+Test: "It should return a result showing boop if the number 1 is inputted"
 Code: var robogers = numbers.map(function(number) {
       if (number.includes("2")) {
-        return number = Boop;
+Expected Output = [ Boop; ]
 
 Test: "It should return a result showing beep if the number 1 is inputted"
 Code: var robogers = numbers.map(function(number) {
       if (number.includes("1")) {
-        return number = Beep;
+Expected Output = [ Beep; ]
 
 ## License
 
