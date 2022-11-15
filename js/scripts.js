@@ -11,15 +11,14 @@ function beepBoop (input) {
     };
   
 var robogers = numbers.map(function(number) {
-  console.log(number)
-    if (number.includes("3")) {
-      return number = neighbor;
-      } else if (number.includes("2")) {
-        return number = boop;
-      } else if (number.includes("1")) {
-        return number = beep;
-      } else {
-        return number;
+  if (number.includes("3")) {
+    return number = neighbor;
+    } else if (number.includes("2")) {
+      return number = boop;
+    } else if (number.includes("1")) {
+      return number = beep;
+    } else {
+      return number;
     };
   });
   return robogers.join(', ');
@@ -42,7 +41,7 @@ $(document).ready(function() {
   $("#reload-page").click(function() {
 
     $(".container").show();
-    $("input#input").val("");
+    $("input#input").val(" ");
     $(".results").hide();
     $(".refresh").hide();
   });  
