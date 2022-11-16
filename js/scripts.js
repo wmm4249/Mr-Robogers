@@ -5,14 +5,14 @@ const boop = "Boop!"
 const neighbor = "Won't you be my neighbor?"
 
 function beepBoop (input) {
-    let numbers = [];
-    for (let i = 0; i <= input; i++) {
-      numbers.push(i.toString());
-    };
+  let numbers = [];
+  for (let i = 0; i <= input; i++) {
+    numbers.push(i.toString());
+  };
   
-var robogers = numbers.map(function(number) {
-  if (number.includes("3")) {
-    return number = neighbor;
+  const robogers = numbers.map(function(number) {
+    if (number.includes("3")) {
+      return number = neighbor;
     } else if (number.includes("2")) {
       return number = boop;
     } else if (number.includes("1")) {
@@ -22,16 +22,16 @@ var robogers = numbers.map(function(number) {
     };
   });
   return robogers.join(', ');
-  }
+}
 
 //UI Logic
 
 $(document).ready(function() {
   $("form#number").submit(function(event) {
     event.preventDefault();
-    let userInput = $("input#input").val();
-    var input = parseInt(userInput);
-    var result = beepBoop(input);
+    const userInput = $("input#input").val();
+    const input = parseInt(userInput);
+    const result = beepBoop(input);
     $(".results").show();
     $("#output").html(result);
     $(".container").hide();
@@ -45,7 +45,4 @@ $(document).ready(function() {
     $(".results").hide();
     $(".refresh").hide();
   });  
-});
-  
-
- 
+}); 
